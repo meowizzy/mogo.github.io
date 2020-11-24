@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*Container
+=============================*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Intro
+==============================*/
+
+.intro {
+    width: 100%;
+    height: auto;
+    background: url(../img/intro.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro_container {
+    padding: 100px 0;
+}
+
+.intro_container__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_container__title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+}
+
+.intro_container__title:after {
+    content: "";
+    margin: 60px auto 60px;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+}
+
+.intro_container__overtitle {
+    color: #fff;
+    font-family: 'Kaushan Script', sans-serif;
+    font-weight: 300;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+/*Btn
+===============================*/
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+    position: relative;
+    background-image: -webkit-linear-gradient(left, #fff 50%, #f38181 50%);
+    background-image: linear-gradient(to right, #fff 50%, #f38181 50%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    transition: background 200ms linear, border-color 200ms ease-in;
+
+}
+
+.btn:hover {
+    background-position: -100%;
+    border: 3px solid #f38181;
+}
+
+/*Header
+===============================*/
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*Top Menu
+===============================*/
+.header__links {
+    display: flex;
+}
+
+.top__menu {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top__menu li {
+    list-style-type: none;
+}
+
+.top__menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 3px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    transition: color 200ms linear;
+    overflow: hidden;
+
+}
+
+.top__menu li a:hover {
+    color: #fce38a;
+}
+
+.top__menu li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease, background .2s ease;
+    visibility: hidden;
+}
+
+.top__menu li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    transition: width .3s ease;
+    background: #fce38a;
+
+}
+
+.top__menu li a:hover:after {
+    width: 100%;
+    background-color: transparent;
+    transition: all 0s linear;
+}
+
+.top__menu li a:hover:before {
+    width: 100%;
+    visibility: visible;
+    background-color: #fce38a;
+}
+
+/*Other Links
+==============================*/
+.other__links {
+    display: flex;
+}
+
+/*Slider
+===============================*/
+.slider {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    opacity: .7;
+    position: relative;
+}
+
+.slider__number {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    bottom: 100%;
+    left: 0;
+    background-color: #f38181;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
